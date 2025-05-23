@@ -6,10 +6,11 @@
 /out-tsc
 /bazel-out
 
-# Node
+# Node modules and logs
 /node_modules
 npm-debug.log
 yarn-error.log
+yarn-debug.log
 
 # IDEs and editors
 .idea/
@@ -27,6 +28,13 @@ yarn-error.log
 !.vscode/launch.json
 !.vscode/extensions.json
 .history/*
+
+# Ionic-specific files
+/www/            # Fichiers générés lors de la build
+/ios/            # Plateforme iOS générée par Capacitor
+/android/        # Plateforme Android générée par Capacitor
+/platforms/      # Plateformes mobiles générées (Cordova)
+/plugins/        # Plugins installés (Cordova)
 
 # Miscellaneous
 /.angular/cache
